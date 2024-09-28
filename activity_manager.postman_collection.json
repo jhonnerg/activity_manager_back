@@ -1,0 +1,673 @@
+{
+	"info": {
+		"_postman_id": "9b2c06a9-80ee-4d38-8f48-fb1ae3d5f3ba",
+		"name": "activity_manager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Student",
+			"item": [
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "http://localhost:3000/student/auth/login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\":\"jhonnerg2\",\r\n    \"password\":\"20Simba20\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/student/auth/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"student",
+										"auth",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:3000/student/auth/registeruser",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n\"username\": \"jhonnerg\",\r\n\"password\": \"20Simba20\",\r\n\"confirpassword\": \"20Simba20\",\r\n\"frist_name\": \"jhonner\",\r\n\"second_name\": \"gregorio\",\r\n\"frist_surname\": \"gonzalez\",\r\n\"second_surname\": \"cordova\",\r\n\"email\": \"gonzalezjhonner@hotmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/student/auth/registeruser",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"student",
+										"auth",
+										"registeruser"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:3000/student/auth/recoverypassword",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"gonzalezjhonner@hotmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/student/auth/recoverypassword",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"student",
+										"auth",
+										"recoverypassword"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:3000/student/auth/changepasswordlogout/token",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"newPassword\":\"20Simba20\",\r\n    \"confiPassword\":\"20Simba20\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/student/auth/changepasswordlogout/token",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"student",
+										"auth",
+										"changepasswordlogout",
+										"token"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "process",
+					"item": [
+						{
+							"name": "subjets",
+							"item": [
+								{
+									"name": "http://localhost:3000/student/subject/sinc_dode/sn3S6ck59I",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "auth",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsInVzZXJuYW1lIjoiamhvbm5lcmcyIiwiaWF0IjoxNjE5MDY1Njg0LCJleHAiOjE2MTkwNjkyODR9.XA_ngc7pwbEDJXBv4Fs_E_5u30NPRWi3XkQVBwN2ZTQ",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:3000/student/subject/sinc_code/3uU1rXiXeL",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"student",
+												"subject",
+												"sinc_code",
+												"3uU1rXiXeL"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "http://localhost:3000/student/subject/list",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "auth",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsInVzZXJuYW1lIjoiamhvbm5lcmcyIiwiaWF0IjoxNjE4OTc2OTkzLCJleHAiOjE2MTg5ODA1OTN9.yWwzO5AoPtHuppzQSjthqUB-YJQldAEMXFOuGY5gtB8",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:3000/student/subject/list",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"student",
+												"subject",
+												"list"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "http://localhost:3000/student/subject/activity/send",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "auth",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsInVzZXJuYW1lIjoiamhvbm5lcmcyIiwiaWF0IjoxNjE5MTQ3MDQ1LCJleHAiOjE2MTkxNTA2NDV9.Bxn1ZXYo1_Y1JeOnxmPECwbvh4rXBmdXUHrZQEQB3oQ",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "files",
+													"type": "file",
+													"src": "/D:/universidad/tesis de grado/FORMATO PROPUESTA DE TRABAJO DE GRADO.docx"
+												},
+												{
+													"key": "data",
+													"value": "{\"description\":\"prueba 2 del corte 3\", \"fk_code_subject\":\"RDGCwtpjsi\",\"fk_activity\":\"21\" }",
+													"type": "text"
+												}
+											],
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:3000/student/subject/activity/send",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"student",
+												"subject",
+												"activity",
+												"send"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "http://localhost:3000/student/subject/detail/BThE5E7vHY",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "auth",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsInVzZXJuYW1lIjoiamhvbm5lcmcyIiwiaWF0IjoxNjA4MTI1MzUwLCJleHAiOjE2MDgxMjg5NTB9.2Rng4SK8c-xNh-gCHgMaLXkCM3Q1wyc9uqPeoeS3JvI",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:3000/student/subject/detail/bCqEsxaApS",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"student",
+												"subject",
+												"detail",
+												"bCqEsxaApS"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Activity",
+							"item": [
+								{
+									"name": "http://localhost:3000/student/subject/activity/list",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "auth",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsInVzZXJuYW1lIjoiamhvbm5lcmcyIiwiaWF0IjoxNjE5MTU2ODk3LCJleHAiOjE2MTkxNjA0OTd9.CDvjUIREZqt8DKDUSKhQ4lpsLRWifh5OlcIDV02eqYI",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:3000/student/subject/activity/list",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"student",
+												"subject",
+												"activity",
+												"list"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "http://localhost:3000/student/subject/activity/detail/1",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "auth",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsInVzZXJuYW1lIjoiamhvbm5lcmcyIiwiaWF0IjoxNjE5MjI1MjM3LCJleHAiOjE2MTkyMjg4Mzd9.mohQZ5BJTr2g89e-A-3V7o4Z6K_yGXCvLzvMx9eIntU",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:3000/student/subject/activity/detail/1",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"student",
+												"subject",
+												"activity",
+												"detail",
+												"1"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Dashboard",
+							"item": [
+								{
+									"name": "http://localhost:3000/student/dashboard/macro",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "auth",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsInVzZXJuYW1lIjoiamhvbm5lcmcyIiwiaWF0IjoxNjE4OTc2OTkzLCJleHAiOjE2MTg5ODA1OTN9.yWwzO5AoPtHuppzQSjthqUB-YJQldAEMXFOuGY5gtB8",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:3000/student/dashboard/macro",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"student",
+												"dashboard",
+												"macro"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "teacher",
+			"item": [
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "http://localhost:3000/teacher/auth/login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\":\"ProfesorJhonnerg\",\r\n    \"password\":\"20Simba20\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/teacher/auth/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"teacher",
+										"auth",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:3000/teacher/auth/registeruser",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n\"username\": \"ProfesorJhonnerg3\",\r\n\"password\": \"20Simba20\",\r\n\"confirpassword\": \"20Simba20\",\r\n\"frist_name\": \"jhonner\",\r\n\"second_name\": \"gregorio\",\r\n\"frist_surname\": \"gonzalez\",\r\n\"second_surname\": \"cordova\",\r\n\"email\": \"elprangregorio_19972@hotmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/teacher/auth/registeruser",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"teacher",
+										"auth",
+										"registeruser"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:3000/teacher/auth/recoverypassword",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"gonzalezjhonner@hotmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/teacher/auth/recoverypassword",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"teacher",
+										"auth",
+										"recoverypassword"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:3000/teacher/auth/changepasswordlogout/token",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"newPassword\":\"20Simba20\",\r\n    \"confiPassword\":\"20Simba20\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/teacher/auth/changepasswordlogout/token",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"teacher",
+										"auth",
+										"changepasswordlogout",
+										"token"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Process",
+					"item": [
+						{
+							"name": "Subjets",
+							"item": [
+								{
+									"name": "http://localhost:3000/teacher/subject/create",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Auth",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiSmhvbm5lcmciLCJpYXQiOjE2MDc5ODg0NTksImV4cCI6MTYwNzk5MjA1OX0.E9w7R7f5Rgurws9CQCaX74elpBI20U1fe7T4k-zQyHs",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name_subjects\": \"Programacion\",\r\n    \"section_subjects\": \"1010\",\r\n    \"turn\": \"Mañana\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:3000/teacher/subject/create",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"teacher",
+												"subject",
+												"create"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "http://localhost:3000/teacher/subject/list",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "auth",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiUHJvZmVzb3JKaG9ubmVyZyIsImlhdCI6MTYxODM2NDQ2MiwiZXhwIjoxNjE4MzY4MDYyfQ.o0kchG_Ar7qk-NTC85O0vaihAchnMjqm0TBmSR58kEo",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:3000/teacher/subject/list",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"teacher",
+												"subject",
+												"list"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "http://localhost:3000/teacher/subject/activity/create",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "auth",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiUHJvZmVzb3JKaG9ubmVyZyIsImlhdCI6MTYxOTE1MDI2OSwiZXhwIjoxNjE5MTUzODY5fQ.Etond_O9C9rsHs4xLJsyzQDIDj0AS_GWVdsPbeJrCww",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{ \r\n    \"name_activity\":\"global taller\",\r\n    \"description\":\"numero reales 12344\",\r\n    \"Date_delivery\":\"2021-4-23\",\r\n    \"weighint\":20,\r\n    \"Status\":true,\r\n    \"fk_code_subject\":\"RDGCwtpjsi\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:3000/teacher/subject/activity/create",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"teacher",
+												"subject",
+												"activity",
+												"create"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "http://localhost:3000/teacher/subject/detail/bCqEsxaApS",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "auth",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiamhvbm5lcmciLCJpYXQiOjE2MDgwNjk4NzIsImV4cCI6MTYwODA3MzQ3Mn0.9452rJIKC81xV413MdeoJb9-O7-F8fTSFJP3fQLmPvY",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:3000/teacher/subject/detail/bCqEsxaApS",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"teacher",
+												"subject",
+												"detail",
+												"bCqEsxaApS"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "http://localhost:3000/teacher/subject/activity/detail/1",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "auth",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsInVzZXJuYW1lIjoiUHJvZmVzb3JKaG9ubmVyZzIiLCJpYXQiOjE2MTgzNjE3NjMsImV4cCI6MTYxODM2NTM2M30.9ZFuvgyRn67z86FnupZ3paKUqpmkVZYXj9tCqZUSPCc",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:3000/teacher/subject/activity/detail/14",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"teacher",
+												"subject",
+												"activity",
+												"detail",
+												"14"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
